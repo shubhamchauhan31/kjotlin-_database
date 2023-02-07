@@ -32,16 +32,13 @@ class MainActivity : AppCompatActivity() {
 
         mainBinding=DataBindingUtil.setContentView(this,R.layout.activity_main)
         init()
-
     }
-
     fun init(){
 //        tvNo=findViewById(R.id.textView);
 //        btn=findViewById(R.id.dice_through)
 //        img=findViewById(R.id.dice_image)
         mainViewModel=ViewModelProvider(this,MainViewModelProvider(5)).get(MainViewModel::class.java)
 
-//
 //        mainViewModel.text.observe(this,{
 //            mainBinding.textView.text=it.toString();
 //        })
@@ -49,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 //        mainViewModel.btnText.observe(this,{text->
 //            mainBinding.diceThrough.text=text.toString()
 //        })
-//
+
 //        mainBinding.diceThrough.setOnClickListener { mainViewModel.updateText() }
         mainBinding.mainView=mainViewModel
         mainBinding.lifecycleOwner=this

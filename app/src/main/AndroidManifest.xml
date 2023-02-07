@@ -14,17 +14,31 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
 <!--        <activity-->
-<!--            android:name=".MyNotes"-->
+<!--            android:name=".activity.RecyclerViewScreen"-->
 <!--            android:exported="false">-->
 <!--            <meta-data-->
 <!--                android:name="android.app.lib_name"-->
 <!--                android:value="" />-->
 <!--        </activity>-->
+        <!-- <activity -->
+        <!-- android:name=".RecyclerViewActivity" -->
+        <!-- android:exported="false"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.lib_name" -->
+        <!-- android:value="" /> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".MyNotes" -->
+        <!-- android:exported="false"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.lib_name" -->
+        <!-- android:value="" /> -->
+        <!-- </activity> -->
         <activity
-            android:name=".activity.QuizActivty"
+            android:name=".activity.RecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MyNotes"
+            android:name=".activity.RecyclerViewScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -25,11 +25,11 @@ class MyNotes : AppCompatActivity() {
         notesDatabase=Room.databaseBuilder(applicationContext,NotesDatabase::class.java,"notesDB").build();
 //        GlobalScope.launch( notesDatabase.notes().addNotes(Notes(1,myNotesBinding.myNotesName.text.toString())))
 
-        myNotesBinding.myNotesBtn.setOnClickListener {
-
-            GlobalScope.launch{notesDatabase.notes().addNotes(Notes(0,myNotesBinding.myNotesName.text.toString()))}
-
-        }
+//        myNotesBinding.myNotesBtn.setOnClickListener {
+//
+//            GlobalScope.launch{notesDatabase.notes().addNotes(Notes(0,myNotesBinding.myNotesName.text.toString()))}
+//
+//        }
     }
 }
 
